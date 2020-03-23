@@ -1,4 +1,3 @@
-package com.parkinglot;
 
 public class ParkingLotSystem {
     private int parkingLotCapacity;

@@ -1,4 +1,3 @@
-package com.parkinglot;
 
 public class ParkingLotException extends Exception {
 

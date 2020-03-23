@@ -1,4 +1,3 @@
-package com.parkinglot;
 
 import org.junit.Assert;
 import org.junit.Before;
@@ -61,6 +60,7 @@ public class ParkingLotTest {
     @Test
     public void givenParkingLot_WhenParkingLotGetFull_ShouldThrowException() {
         try {
+            parkingLotSystem.RegisterOwner(owner);
             parkingLotSystem.park(vehicle);
             Object vehicle2 = new Object();
             parkingLotSystem.park(vehicle2);
