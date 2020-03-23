@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ParkingLotTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-03-23T10:36:30" hostname="anurag-Inspiron-15-3567" time="0.001">
+<testsuite name="ParkingLotTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-03-23T10:44:10" hostname="anurag-Inspiron-15-3567" time="0.004">
   <properties/>
-  <testcase name="givenParkingLot_WhenParkingLotGetFull_ShouldThrowException" classname="ParkingLotTest" time="0.001"/>
+  <testcase name="givenParkingLot_WhenParkingLotGetFull_ShouldInformAirportSecurity" classname="ParkingLotTest" time="0.001"/>
+  <testcase name="givenParkingLot_WhenParkingLotGetFull_ShouldInformOwner" classname="ParkingLotTest" time="0.001"/>
+  <testcase name="givenParkingLot_WhenVehicleIsNotParked_shouldReturnFalse" classname="ParkingLotTest" time="0.0"/>
+  <testcase name="givenParkingLot_WhenParkingLotGetFull_ShouldThrowException" classname="ParkingLotTest" time="0.0"/>
+  <testcase name="givenParkingLot_WhenVehicleParked_shouldReturnTrue" classname="ParkingLotTest" time="0.0"/>
+  <testcase name="givenParkingLot_WhenAttemptToUnparkDifferentVehicle_shouldReturnFalse" classname="ParkingLotTest" time="0.0"/>
+  <testcase name="givenParkingLot_WhenVehicleParked_shouldUnparked" classname="ParkingLotTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

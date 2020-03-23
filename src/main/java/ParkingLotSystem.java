@@ -4,6 +4,7 @@ public class ParkingLotSystem {
     private Object vehicle;
     private int currentParkingLotSize;
     ParkingLotOwner owner;
+    private AirportSecurity security;
 
 
     public ParkingLotSystem(int parkingLotCapacity) {
@@ -14,9 +15,14 @@ public class ParkingLotSystem {
         this.owner = owner;
     }
 
+    public void RegisterAirportSecurity(AirportSecurity security) {
+        this.security = security;
+    }
+
     public boolean park(Object vehicle) throws ParkingLotException {
         if (this.currentParkingLotSize == this.parkingLotCapacity) {
             owner.parkingLotIsFull();
+            security.parkingLotIsFull();
             throw new ParkingLotException("Parking lot is full");
         }
         this.vehicle = vehicle;
@@ -31,5 +37,4 @@ public class ParkingLotSystem {
         }
         throw new ParkingLotException("Such Type Vehicle Not Found");
     }
-
 }
