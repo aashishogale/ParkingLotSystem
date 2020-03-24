@@ -1,14 +1,23 @@
 
-public class AirportSecurity {
+public class AirportSecurity implements ParkingLotObservers {
+    private boolean isFullCapacity;
 
-    private Boolean parkingLotIsFull;
-
-
-    public Boolean isParkingLotFull() {
-        return parkingLotIsFull;
+    @Override
+    public void setCapacityFull() {
+        isFullCapacity = true;
     }
 
-    public void parkingLotIsFull() {
-        parkingLotIsFull = true;
+    @Override
+    public boolean isCapacityFull() {
+        return this.isFullCapacity;
     }
+
+    @Override
+    public void setParkingTime(int time) {}
+
+    @Override
+    public int getParkingTime() {
+        return 0;
+    }
+
 }

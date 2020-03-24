@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ParkingLotTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-03-23T10:44:10" hostname="anurag-Inspiron-15-3567" time="0.004">
+<testsuite name="ParkingLotTest" tests="17" skipped="0" failures="0" errors="0" timestamp="2020-03-24T10:43:40" hostname="anurag-Inspiron-15-3567" time="0.044">
   <properties/>
-  <testcase name="givenParkingLot_WhenParkingLotGetFull_ShouldInformAirportSecurity" classname="ParkingLotTest" time="0.001"/>
-  <testcase name="givenParkingLot_WhenParkingLotGetFull_ShouldInformOwner" classname="ParkingLotTest" time="0.001"/>
-  <testcase name="givenParkingLot_WhenVehicleIsNotParked_shouldReturnFalse" classname="ParkingLotTest" time="0.0"/>
-  <testcase name="givenParkingLot_WhenParkingLotGetFull_ShouldThrowException" classname="ParkingLotTest" time="0.0"/>
-  <testcase name="givenParkingLot_WhenVehicleParked_shouldReturnTrue" classname="ParkingLotTest" time="0.0"/>
-  <testcase name="givenParkingLot_WhenAttemptToUnparkDifferentVehicle_shouldReturnFalse" classname="ParkingLotTest" time="0.0"/>
-  <testcase name="givenParkingLot_WhenVehicleParked_shouldUnparked" classname="ParkingLotTest" time="0.001"/>
+  <testcase name="givenVehicle_WhenUnParked_ShouldReturnTrue" classname="ParkingLotTest" time="0.022"/>
+  <testcase name="givenVehicle_WhenParked_ShouldReturnTrue" classname="ParkingLotTest" time="0.0"/>
+  <testcase name="givenVehicle_WhenVehicleNotFound_ShouldThrowVehicleNotFoundException" classname="ParkingLotTest" time="0.0"/>
+  <testcase name="givenCapacityIs2_ShouldAbleToPark2Vehicle" classname="ParkingLotTest" time="0.0"/>
+  <testcase name="givenVehicle_WhenLotSpaceIsAvailableAfterFull_ShouldInformTheOwnerAndReturnFalse" classname="ParkingLotTest" time="0.006"/>
+  <testcase name="givenParkingLotCapacity_WhenInitialize_ShouldReturnParkingCapacity" classname="ParkingLotTest" time="0.0"/>
+  <testcase name="givenWhenLotIsFull_ShouldInformTheSecurity" classname="ParkingLotTest" time="0.0"/>
+  <testcase name="AfterParkingAndUnParkingVehicles_ShouldReturnAvailableSlots" classname="ParkingLotTest" time="0.001"/>
+  <testcase name="givenVehicle_WhenLotSpaceIsAvailableAfterFull_ShouldInformTheAirPortSecurityAndReturnFalse" classname="ParkingLotTest" time="0.001"/>
+  <testcase name="givenMultipleCarsLessThanActualCapacity_WhenParkEvenly_shouldReturnFirstIndexEmpty" classname="ParkingLotTest" time="0.001"/>
+  <testcase name="givenWhenParkingLotIsFull_ShouldInformTheOwner" classname="ParkingLotTest" time="0.001"/>
+  <testcase name="givenVehicle_WhenAlReadyParked_ShouldReturnFalse" classname="ParkingLotTest" time="0.0"/>
+  <testcase name="givenParkingLot_ShouldReturnAvailableSlots" classname="ParkingLotTest" time="0.0"/>
+  <testcase name="givenVehicleForParkingOnEmptySlot_WhenParkWithProvidedEmptySlot_ShouldReturnTrue" classname="ParkingLotTest" time="0.001"/>
+  <testcase name="givenCarToPark_whenDriverIsHandicap_shouldParkedAtNearestSpot" classname="ParkingLotTest" time="0.001"/>
+  <testcase name="givenVehicleForParking_WhenVehicleParkedTimeIsSet_ShouldReturnParkingTime" classname="ParkingLotTest" time="0.001"/>
+  <testcase name="givenVehicle_WhenVehicleFound_ShouldReturnVehicleParkingSlotNumber" classname="ParkingLotTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

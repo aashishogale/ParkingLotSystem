@@ -1,7 +1,15 @@
 
-public class ParkingLotException extends Exception {
+public class ParkingLotException extends RuntimeException {
+    String exceptionMessage;
 
-    public ParkingLotException(String message) {
-        super(message);
+    public enum ExceptionTypes {
+        PARKING_LOT_FULL, VEHICLE_NOT_FOUND ,VEHICLE_ALREADY_PARKED
+    }
+
+    public ExceptionTypes exceptionTypes;
+
+    public ParkingLotException(String message, ExceptionTypes types) {
+        this.exceptionMessage = message;
+        this.exceptionTypes = types;
     }
 }

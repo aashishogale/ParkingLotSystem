@@ -1,14 +1,25 @@
 
-public class ParkingLotOwner {
+public class ParkingLotOwner implements ParkingLotObservers {
+    private boolean isFullCapacity;
+    private int parkingTime;
 
-    private boolean parkingLotIsFull;
-
-
-    public boolean isParkingLotFull() {
-        return parkingLotIsFull;
+    @Override
+    public void setCapacityFull() {
+        isFullCapacity = true;
     }
 
-    public void parkingLotIsFull() {
-        parkingLotIsFull = true;
+    @Override
+    public boolean isCapacityFull() {
+        return isFullCapacity;
+    }
+
+    @Override
+    public void setParkingTime(int parkingTime) {
+        this.parkingTime = parkingTime;
+    }
+
+    @Override
+    public int getParkingTime() {
+        return parkingTime;
     }
 }
